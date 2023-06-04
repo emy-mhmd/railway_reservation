@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="533.0" prefWidth="616.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Railway_reservation.Logincontroller">
+   <children>
+      <Label alignment="CENTER" contentDisplay="BOTTOM" layoutX="356.0" layoutY="46.0" prefHeight="55.0" prefWidth="180.0" text="welcome" textFill="#9e5d2e">
+         <font>
+            <Font name="System Bold Italic" size="40.0" />
+         </font>
+      </Label>
+      <Label layoutX="372.0" layoutY="189.0" text="username" textFill="#9e5d2e">
+         <font>
+            <Font size="16.0" />
+         </font></Label>
+      <Label layoutX="373.0" layoutY="293.0" text="password" textFill="#9e5d2e">
+         <font>
+            <Font size="16.0" />
+         </font></Label>
+      <TextField fx:id="usernamefield" layoutX="372.0" layoutY="223.0" promptText="enter username" style="-fx-background-color: transparent; -fx-border-color: brown; -fx-border-width: 0px 0px 2px 0px;" />
+      <PasswordField fx:id="loginpasswordfield" layoutX="372.0" layoutY="328.0" promptText="enter password" style="-fx-border-width: 0px 0px 2px 0px; -fx-background-color: transparent; -fx-border-color: brown;" />
+      <Button defaultButton="true" layoutX="305.0" layoutY="432.0" mnemonicParsing="false" onAction="#reg" prefHeight="49.0" prefWidth="116.0" style="-fx-background-color: transparent;" text="register" textFill="#9e5d2e">
+         <font>
+            <Font name="Gabriola" size="25.0" />
+         </font></Button>
+      <Button defaultButton="true" layoutX="465.0" layoutY="432.0" mnemonicParsing="false" onAction="#log" prefHeight="49.0" prefWidth="116.0" style="-fx-background-color: transparent;" text="login" textFill="#9e5d2e">
+         <font>
+            <Font name="Gabriola" size="25.0" />
+         </font></Button>
+      <AnchorPane prefHeight="541.0" prefWidth="272.0" style="-fx-background-color: #814343;">
+         <children>
+            <ImageView fitHeight="205.0" fitWidth="299.0" layoutX="-2.0" layoutY="174.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@images/371f54e6c0a67937bcca57b8ef8fa929.gif" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <FontAwesomeIconView glyphName="TRAIN" layoutX="308.0" layoutY="84.0" size="25" text="" />
+      <FontAwesomeIconView glyphName="USER" layoutX="337.0" layoutY="247.0" size="25" text="" />
+      <FontAwesomeIconView glyphName="LOCK" layoutX="337.0" layoutY="349.0" size="25" />
+      <Button layoutX="355.0" layoutY="363.0" mnemonicParsing="false" onAction="#forgetpassword" prefHeight="25.0" prefWidth="170.0" style="-fx-background-color: transparent;" text="forget password" textFill="#860606" />
+   </children>
+</Pane>

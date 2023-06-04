@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="533.0" prefWidth="616.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Railway_reservation.Admin">
+   <children>
+      <TextField fx:id="staff_id" layoutX="382.0" layoutY="34.0" promptText="staff id" style="-fx-background-color: transparent; -fx-border-color: brown; -fx-border-width: 0px 0px 2px 0px;" />
+      <TextField fx:id="staff_name" layoutX="382.0" layoutY="91.0" promptText="staff name" style="-fx-background-color: transparent; -fx-border-color: brown; -fx-border-width: 0px 0px 2px 0px;" />
+      <TextField fx:id="staff_age" layoutX="382.0" layoutY="152.0" promptText="staff age" style="-fx-background-color: transparent; -fx-border-color: brown; -fx-border-width: 0px 0px 2px 0px;" />
+      <TextField fx:id="staff_phone" layoutX="382.0" layoutY="202.0" promptText="staff email" style="-fx-background-color: transparent; -fx-border-color: brown; -fx-border-width: 0px 0px 2px 0px;" />
+      <TextField fx:id="staff_email" layoutX="382.0" layoutY="260.0" promptText="staff phone number" style="-fx-background-color: transparent; -fx-border-color: brown; -fx-border-width: 0px 0px 2px 0px;" />
+      <TextField fx:id="staff_salary" layoutX="382.0" layoutY="359.0" promptText="staff salary" style="-fx-background-color: transparent; -fx-border-color: brown; -fx-border-width: 0px 0px 2px 0px;" />
+      <TextField fx:id="staff_role" layoutX="382.0" layoutY="401.0" promptText="staff role" style="-fx-background-color: transparent; -fx-border-color: brown; -fx-border-width: 0px 0px 2px 0px;" />
+      <Button defaultButton="true" layoutX="333.0" layoutY="466.0" mnemonicParsing="false" onAction="#add_staff" style="-fx-background-color: transparent;" text="add staff" textFill="#9e5d2e">
+         <font>
+            <Font name="Castellar" size="26.0" />
+         </font></Button>
+      <AnchorPane layoutX="-7.0" prefHeight="539.0" prefWidth="273.0" style="-fx-background-color: #814343;">
+         <children>
+            <ImageView fitHeight="169.0" fitWidth="274.0" layoutX="5.0" layoutY="177.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@images/Силуэт-поезда_-проходящего-мимо-утеса_-на-иллюстрации-bridgevector-_-Премиум-векторы.jpg" />
+               </image>
+            </ImageView>
+            <Button layoutX="43.0" layoutY="40.0" mnemonicParsing="false" onAction="#back" style="-fx-background-color: transparent;" text="SIGN OUT">
+               <graphic>
+                  <FontAwesomeIconView glyphName="SIGN_OUT" size="25" />
+               </graphic>
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+      <FontAwesomeIconView glyphName="USER" layoutX="343.0" layoutY="58.0" size="25" text="" />
+      <FontAwesomeIconView glyphName="USER" layoutX="343.0" layoutY="115.0" size="25" />
+      <FontAwesomeIconView glyphName="PHONE" layoutX="341.0" layoutY="282.0" size="25" text="" />
+      <FontAwesomeIconView glyphName="LOCK" layoutX="342.0" layoutY="332.0" size="25" />
+      <FontAwesomeIconView glyphName="MONEY" layoutX="337.0" layoutY="381.0" size="25" />
+      <ImageView fitHeight="28.0" fitWidth="38.0" layoutX="333.0" layoutY="151.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@images/images%20(1).png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="38.0" fitWidth="65.0" layoutX="333.0" layoutY="202.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@images/email-icon-sign-symbol-logo-vector.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="38.0" fitWidth="53.0" layoutX="328.0" layoutY="401.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@images/job-waiter-logo-icon-symbol-designs-vector.jpg" />
+         </image>
+      </ImageView>
+      <PasswordField fx:id="staff_password" layoutX="382.0" layoutY="309.0" promptText="staff password" style="-fx-background-color: transparent; -fx-border-color: brown; -fx-border-width: 0px 0px 2px 0px;" />
+   </children>
+</AnchorPane>

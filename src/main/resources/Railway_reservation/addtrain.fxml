@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="534.0" prefWidth="554.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Railway_reservation.Addtrain">
+   <children>
+      <TextField fx:id="trainnumber" layoutX="316.0" layoutY="70.0" promptText="train number" style="-fx-background-color: transparent; -fx-border-color: brown; -fx-border-width: 0px 0px 2px 0px;" />
+      <TextField fx:id="departuetime" layoutX="316.0" layoutY="146.0" promptText="departure time" style="-fx-background-color: transparent; -fx-border-color: brown; -fx-border-width: 0px 0px 2px 0px;" />
+      <TextField fx:id="arrivingtime" layoutX="316.0" layoutY="228.0" promptText="arriving time" style="-fx-background-color: transparent; -fx-border-color: brown; -fx-border-width: 0px 0px 2px 0px;" />
+      <TextField fx:id="route" layoutX="316.0" layoutY="295.0" promptText="from-to" style="-fx-background-color: transparent; -fx-border-color: brown; -fx-border-width: 0px 0px 2px 0px;" />
+      <TextField fx:id="cost" layoutX="316.0" layoutY="372.0" promptText="ticket cost" style="-fx-background-color: transparent; -fx-border-color: brown; -fx-border-width: 0px 0px 2px 0px;" />
+      <Button defaultButton="true" layoutX="312.0" layoutY="450.0" mnemonicParsing="false" onAction="#add" style="-fx-background-color: transparent;" text="ADD TRAIN" textFill="#9e5d2e">
+         <font>
+            <Font name="Castellar" size="20.0" />
+         </font></Button>
+      <AnchorPane prefHeight="534.0" prefWidth="212.0" style="-fx-background-color: #814343;">
+         <children>
+            <Button layoutX="22.0" layoutY="31.0" mnemonicParsing="false" onAction="#back" style="-fx-background-color: TRANSPARENT;">
+               <graphic>
+                  <FontAwesomeIconView glyphName="ARROW_LEFT" size="25" tabSize="25" />
+               </graphic>
+            </Button>
+            <ImageView fitHeight="135.0" fitWidth="212.0" layoutY="193.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@images/Силуэт-поезда_-проходящего-мимо-утеса_-на-иллюстрации-bridgevector-_-Премиум-векторы.jpg" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <FontAwesomeIconView glyphName="TRAIN" layoutX="301.0" layoutY="478.0" size="25" />
+      <FontAwesomeIconView glyphName="TRAIN" layoutX="279.0" layoutY="92.0" size="25" />
+      <ImageView fitHeight="34.0" fitWidth="32.0" layoutX="273.0" layoutY="143.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@images/images%20(2).png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="34.0" fitWidth="32.0" layoutX="273.0" layoutY="225.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@images/images%20(2).png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="79.0" fitWidth="73.0" layoutX="243.0" layoutY="282.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@images/images%20(3).png" />
+         </image>
+      </ImageView>
+      <FontAwesomeIconView glyphName="TICKET" layoutX="274.0" layoutY="394.0" size="25" wrappingWidth="32.0" />
+   </children>
+</AnchorPane>

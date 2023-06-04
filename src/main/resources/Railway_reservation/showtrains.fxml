@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.FlowPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="anchorpane1" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="565.0" prefWidth="582.0" style="-fx-background-color: #814343;" styleClass="#bc6447" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Railway_reservation.Showtrains">
+
+   <children>
+      <Button layoutX="6.0" layoutY="6.0" mnemonicParsing="false" onAction="#back" prefHeight="41.0" prefWidth="105.0" style="-fx-background-color: #814343;" text="HOME">
+         <font>
+            <Font size="19.0" />
+         </font>
+         <graphic>
+            <FontAwesomeIconView glyphName="HOME" tabSize="25" />
+         </graphic>
+      </Button>
+      <AnchorPane layoutX="38.0" layoutY="52.0" prefHeight="476.0" prefWidth="473.0" style="-fx-background-radius: 25; -fx-background-color: #814343;">
+         <children>
+            <ScrollPane layoutX="45.0" layoutY="37.0" prefHeight="388.0" prefWidth="382.0">
+              <content>
+                <AnchorPane fx:id="anchorepane2" minHeight="0.0" minWidth="0.0" prefHeight="559.0" prefWidth="370.0">
+                     <children>
+                        <FlowPane fx:id="flowpan1" layoutX="8.0" layoutY="7.0" prefHeight="551.0" prefWidth="348.0" />
+                     </children>
+                  </AnchorPane>
+              </content>
+            </ScrollPane>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

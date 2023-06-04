@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="456.0" prefWidth="647.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Railway_reservation.TicketInfo">
+   <children>
+      <Button defaultButton="true" layoutX="546.0" layoutY="424.0" mnemonicParsing="false" onAction="#print" prefHeight="26.0" prefWidth="78.0" style="-fx-background-color: #e1ae3e;" text="PRINT" />
+      <AnchorPane fx:id="ticketpane" layoutY="12.0" prefHeight="408.0" prefWidth="646.0">
+         <children>
+            <ImageView fitHeight="403.0" fitWidth="660.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@images/download.jpg" />
+               </image>
+            </ImageView>
+            <AnchorPane layoutX="14.0" layoutY="84.0" prefHeight="251.0" prefWidth="630.0">
+               <children>
+                  <Label fx:id="day" layoutX="32.0" layoutY="206.0" prefHeight="20.0" prefWidth="77.0" text="Label">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="33.0" layoutY="173.0" text="DAY">
+                     <font>
+                        <Font size="17.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="route" layoutX="29.0" layoutY="137.0" prefHeight="18.0" prefWidth="126.0" text="label">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="25.0" layoutY="102.0" text="ROUTE">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="passenfername" layoutX="29.0" layoutY="62.0" prefHeight="26.0" prefWidth="100.0" text="Label">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="21.0" layoutY="28.0" prefHeight="34.0" prefWidth="142.0" text="name of passenger">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="trainnumber" layoutX="225.0" layoutY="206.0" prefHeight="18.0" prefWidth="92.0" text="Label">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="208.0" layoutY="173.0" text="train number">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="coachnumber" layoutX="225.0" layoutY="137.0" prefHeight="18.0" prefWidth="95.0" text="Label">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="200.0" layoutY="101.0" text="coach number">
+                     <font>
+                        <Font size="17.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="ticketprice" layoutX="225.0" layoutY="65.0" prefHeight="18.0" prefWidth="57.0" text="Label">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="227.0" layoutY="27.0" text="price">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="categore" layoutX="364.0" layoutY="206.0" text="Label">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="371.0" layoutY="173.0" text="class">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="seatsnumber" layoutX="373.0" layoutY="137.0" prefHeight="20.0" prefWidth="142.0" text="Label">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="371.0" layoutY="101.0" text="seats number">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="departuretime" layoutX="393.0" layoutY="64.0" prefHeight="18.0" prefWidth="44.0" text="Label">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="370.0" layoutY="32.0" text="departure time">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="arrivingtime" layoutX="533.0" layoutY="65.0" prefHeight="18.0" prefWidth="67.0" text="Label">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="520.0" layoutY="31.0" text="arriving time">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

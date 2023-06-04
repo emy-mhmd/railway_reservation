@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="533.0" prefWidth="616.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Railway_reservation.Registercontroller">
+   <children>
+      <AnchorPane prefHeight="536.0" prefWidth="282.0" style="-fx-background-color: #814343;">
+         <children>
+            <ImageView fitHeight="179.0" fitWidth="282.0" layoutY="180.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@images/Силуэт-поезда_-проходящего-мимо-утеса_-на-иллюстрации-bridgevector-_-Премиум-векторы.jpg" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <TextField fx:id="usernameTextfield" layoutX="363.0" layoutY="76.0" promptText="Username" style="-fx-border-width: 0px 0px 2px 0px; -fx-border-color: brown; -fx-background-color: transparent;" />
+      <TextField fx:id="ageTextfield" layoutX="363.0" layoutY="137.0" promptText="enter_age" style="-fx-border-color: brown; -fx-border-width: 0px 0px 2px 0px; -fx-background-color: transparent;" />
+      <TextField fx:id="phonenumberTextfield" layoutX="371.0" layoutY="196.0" prefHeight="28.0" prefWidth="150.0" promptText="enter_phone_number" style="-fx-background-color: transparent; -fx-border-color: brown; -fx-border-width: 0px 0px 2px 0px;" />
+      <TextField fx:id="emailTextfield" layoutX="371.0" layoutY="253.0" promptText="enter_email" style="-fx-background-color: transparent; -fx-border-width: 0px 0px 2px 0px; -fx-border-color: brown;" />
+      <PasswordField fx:id="passwordfield" layoutX="371.0" layoutY="317.0" promptText="enter_password" style="-fx-background-color: transparent; -fx-border-color: brown; -fx-border-width: 0px 0px 2px 0px;" />
+      <PasswordField fx:id="confpasswordfield" layoutX="371.0" layoutY="384.0" promptText="confirm_password" style="-fx-background-color: transparent; -fx-border-color: brown; -fx-border-width: 0px 0px 2px 0px;" />
+      <Button cancelButton="true" defaultButton="true" layoutX="348.0" layoutY="447.0" mnemonicParsing="false" onAction="#backlog" prefHeight="36.0" prefWidth="163.0" style="-fx-background-color: transparent;" text="register" textFill="#9e5d2e">
+         <font>
+            <Font name="Gabriola" size="25.0" />
+         </font>
+      </Button>
+      <FontAwesomeIconView glyphName="USER" layoutX="324.0" layoutY="106.0" size="25" text="" />
+      <FontAwesomeIconView glyphName="PHONE" layoutX="323.0" layoutY="218.0" size="25" />
+      <FontAwesomeIconView glyphName="LOCK" layoutX="333.0" layoutY="341.0" size="25" text="" />
+      <FontAwesomeIconView glyphName="LOCK" layoutX="333.0" layoutY="415.0" size="25" text="" />
+      <ImageView fitHeight="28.0" fitWidth="30.0" layoutX="318.0" layoutY="139.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@images/images%20(1).png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="47.0" fitWidth="66.0" layoutX="318.0" layoutY="245.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@images/email-icon-sign-symbol-logo-vector.jpg" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

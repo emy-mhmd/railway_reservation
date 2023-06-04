@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="452.0" prefWidth="589.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Railway_reservation.Passengerformcontroller">
+   <children>
+      <Button defaultButton="true" layoutX="257.0" layoutY="381.0" mnemonicParsing="false" onAction="#trainroute" style="-fx-background-color: transparent;" text="search" textFill="#9e5d2e">
+         <font>
+            <Font name="Gabriola" size="27.0" />
+         </font></Button>
+      <Label layoutX="88.0" layoutY="173.0" text="from" textFill="#9e5d2e">
+         <font>
+            <Font size="26.0" />
+         </font></Label>
+      <Label layoutX="82.0" layoutY="244.0" text="TO" textFill="#9e5d2e">
+         <font>
+            <Font size="26.0" />
+         </font></Label>
+      <TextField fx:id="to" layoutX="219.0" layoutY="249.0" promptText="distenation" style="-fx-background-color: transparent; -fx-border-color: brown; -fx-border-width: 0px 0px 2px 0px;" />
+      <ChoiceBox fx:id="categore" layoutX="227.0" layoutY="321.0" prefWidth="150.0" />
+      <Label layoutX="72.0" layoutY="315.0" text="choose class" textFill="#9e5d2e">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Label>
+      <AnchorPane layoutX="-1.0" layoutY="1.0" prefHeight="147.0" prefWidth="607.0" style="-fx-background-color: #814343;">
+         <children>
+            <ImageView fitHeight="153.0" fitWidth="232.0" layoutX="-16.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@images/Incredible%20pictures%20show%20Egypt%20in%20all%20its%20glory.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="153.0" fitWidth="226.0" layoutX="165.0" layoutY="1.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@images/Twenty20.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="153.0" fitWidth="160.0" layoutX="349.0" layoutY="1.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@images/Stanly%20bridge,Alexandria.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="155.0" fitWidth="121.0" layoutX="501.0" layoutY="1.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@images/The%20Karnak%20Temple%20Complex%20in%20Egypt_%20One%20of%20the%20worlds%20largest%20temple%20complexes.jpg" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <TextField fx:id="fromm" layoutX="219.0" layoutY="178.0" promptText="enter start location" style="-fx-background-color: transparent; -fx-border-color: brown; -fx-border-width: 0px 0px 2px 0px;" />
+   </children>
+</AnchorPane>

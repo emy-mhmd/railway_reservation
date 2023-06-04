@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="174.0" prefWidth="366.0" style="-fx-background-color: #814343;" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Railway_reservation.Deletetrain">
+   <children>
+      <Button defaultButton="true" layoutX="114.0" layoutY="102.0" mnemonicParsing="false" onAction="#delete" prefHeight="57.0" prefWidth="138.0" style="-fx-background-color: transparent;" text="delete">
+         <font>
+            <Font name="System Bold" size="27.0" />
+         </font></Button>
+      <TextField fx:id="trainnumber" layoutX="110.0" layoutY="50.0" promptText="train number" style="-fx-background-color: transparent; -fx-border-color: brown; -fx-border-width: 0px 0px 2px 0px;">
+         <font>
+            <Font size="16.0" />
+         </font></TextField>
+      <FontAwesomeIconView glyphName="TRAIN" layoutX="71.0" layoutY="79.0" size="30" wrappingWidth="26.228620529174805" />
+      <Button layoutX="14.0" layoutY="14.0" mnemonicParsing="false" onAction="#back" prefHeight="24.0" prefWidth="40.0" style="-fx-background-color: TRANSPARENT;">
+         <graphic>
+            <FontAwesomeIconView glyphName="ARROW_LEFT" size="25" tabSize="25" text="" wrappingWidth="40.0" />
+         </graphic></Button>
+   </children>
+</AnchorPane>

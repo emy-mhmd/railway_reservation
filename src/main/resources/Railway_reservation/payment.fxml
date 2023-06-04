@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="550.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Railway_reservation.make_Payment">
+   <children>
+      <Button defaultButton="true" layoutX="258.0" layoutY="330.0" mnemonicParsing="false" onAction="#PAY" style="-fx-background-color: #ac4242;" text="pay now">
+         <font>
+            <Font name="Castellar" size="23.0" />
+         </font></Button>
+      <Label layoutX="209.0" layoutY="66.0" text="Amount to pay" textFill="#9e5d2e">
+         <font>
+            <Font name="Castellar" size="16.0" />
+         </font></Label>
+      <TextField fx:id="ticketamount" layoutX="213.0" layoutY="104.0" />
+      <Label layoutX="214.0" layoutY="151.0" text="name on card" textFill="#9e5d2e">
+         <font>
+            <Font name="Castellar" size="16.0" />
+         </font></Label>
+      <TextField fx:id="nameofcard" layoutX="213.0" layoutY="187.0" />
+      <Label layoutX="207.0" layoutY="236.0" text="card number" textFill="#9e5d2e">
+         <font>
+            <Font name="Castellar" size="16.0" />
+         </font></Label>
+      <Label layoutX="393.0" layoutY="236.0" text="Expiry" textFill="#9e5d2e">
+         <font>
+            <Font name="Castellar" size="16.0" />
+         </font></Label>
+      <Label layoutX="501.0" layoutY="236.0" text="CVC" textFill="#9e5d2e">
+         <font>
+            <Font name="Castellar" size="16.0" />
+         </font></Label>
+      <PasswordField fx:id="cardnumber" layoutX="200.0" layoutY="273.0" />
+      <TextField fx:id="expiry" layoutX="388.0" layoutY="272.0" prefHeight="26.0" prefWidth="53.0" promptText="MM/YY" />
+      <TextField fx:id="cvc" layoutX="498.0" layoutY="272.0" prefHeight="26.0" prefWidth="44.0" />
+      <Button fx:id="ticketbutton" layoutX="448.0" layoutY="341.0" mnemonicParsing="false" onAction="#show_ticket" prefHeight="28.0" prefWidth="113.0" style="-fx-background-color: #ac4242;" text="show ticket" visible="false">
+         <font>
+            <Font name="Castellar" size="11.0" />
+         </font></Button>
+      <AnchorPane prefHeight="400.0" prefWidth="170.0" style="-fx-background-color: #814343;">
+         <children>
+            <Button layoutX="24.0" layoutY="190.0" mnemonicParsing="false" onAction="#cancel" style="-fx-background-color: TRANSPARENT;" text="sign out">
+               <graphic>
+                  <FontAwesomeIconView glyphName="SIGN_OUT" size="25" />
+               </graphic>
+               <font>
+                  <Font size="19.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+      <ImageView fitHeight="55.0" fitWidth="150.0" layoutX="426.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@images/33-336324_icons-visa-card-logo-png.png" />
+         </image>
+      </ImageView>
+      <FontAwesomeIconView glyphName="MONEY" layoutX="209.0" layoutY="363.0" size="25" />
+   </children>
+</AnchorPane>
